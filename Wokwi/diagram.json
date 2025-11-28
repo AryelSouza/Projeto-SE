@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "author": "Kevin Ryan Soares Fernandes",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-breadboard-half",
+      "id": "bb1",
+      "top": 35.4,
+      "left": 156.4,
+      "attrs": { "color": "#575756" }
+    },
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": -0.18,
+      "left": 4.57,
+      "attrs": { "builder": "esp-idf" }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 274.6,
+      "left": 308.2,
+      "rotate": 90,
+      "attrs": { "horn": "double" }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo2",
+      "top": 274.6,
+      "left": 125.8,
+      "rotate": 90,
+      "attrs": { "horn": "double" }
+    },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "joystick1",
+      "top": -125.4,
+      "left": -109.8,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "servo1:GND", "bb1:bn.20", "black", [ "v0" ] ],
+    [ "servo1:V+", "bb1:bp.19", "red", [ "v0" ] ],
+    [ "esp:GND.1", "bb1:bn.1", "black", [ "h-18.78", "v78.28" ] ],
+    [ "servo2:GND", "bb1:bn.4", "black", [ "v0" ] ],
+    [ "servo2:V+", "bb1:bp.3", "red", [ "v0" ] ],
+    [ "servo2:PWM", "bb1:3b.j", "orange", [ "v0" ] ],
+    [ "servo1:PWM", "bb1:22b.i", "limegreen", [ "v0" ] ],
+    [ "esp:5V", "bb1:bp.1", "red", [ "h-9.18", "v19.38", "h128.9", "v0.9" ] ],
+    [ "bb1:3b.i", "esp:18", "orange", [ "v0" ] ],
+    [ "bb1:22b.h", "esp:19", "limegreen", [ "v0" ] ],
+    [ "joystick1:GND", "esp:GND.2", "black", [ "v9.6", "h143.73" ] ],
+    [ "joystick1:VERT", "esp:32", "cyan", [ "v0" ] ],
+    [ "joystick1:HORZ", "esp:33", "yellow", [ "v0" ] ],
+    [ "joystick1:SEL", "esp:25", "blue", [ "v0" ] ],
+    [ "joystick1:VCC", "esp:3V3", "red", [ "v9.6", "h-124.8", "v28.8" ] ]
+  ],
+  "dependencies": {}
+}
