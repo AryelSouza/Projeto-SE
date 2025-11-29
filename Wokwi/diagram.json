@@ -39,6 +39,14 @@
       "top": -125.4,
       "left": -109.8,
       "attrs": {}
+    },
+    {
+      "type": "wokwi-mpu6050",
+      "id": "imu1",
+      "top": -45.62,
+      "left": 203.68,
+      "rotate": 180,
+      "attrs": {}
     }
   ],
   "connections": [
@@ -52,13 +60,21 @@
     [ "servo2:PWM", "bb1:3b.j", "orange", [ "v0" ] ],
     [ "servo1:PWM", "bb1:22b.i", "limegreen", [ "v0" ] ],
     [ "esp:5V", "bb1:bp.1", "red", [ "h-9.18", "v19.38", "h128.9", "v0.9" ] ],
-    [ "bb1:3b.i", "esp:18", "orange", [ "v0" ] ],
-    [ "bb1:22b.h", "esp:19", "limegreen", [ "v0" ] ],
     [ "joystick1:GND", "esp:GND.2", "black", [ "v9.6", "h143.73" ] ],
     [ "joystick1:VERT", "esp:32", "cyan", [ "v0" ] ],
     [ "joystick1:HORZ", "esp:33", "yellow", [ "v0" ] ],
     [ "joystick1:SEL", "esp:25", "blue", [ "v0" ] ],
-    [ "joystick1:VCC", "esp:3V3", "red", [ "v9.6", "h-124.8", "v28.8" ] ]
+    [ "joystick1:VCC", "esp:3V3", "red", [ "v9.6", "h-124.8", "v28.8" ] ],
+    [ "bb1:3b.i", "esp:15", "orange", [ "v0" ] ],
+    [ "bb1:22b.h", "esp:2", "limegreen", [ "v0" ] ],
+    [ "imu1:VCC", "bb1:tp.3", "red", [ "v0" ] ],
+    [ "imu1:GND", "bb1:tn.4", "black", [ "v0" ] ],
+    [ "imu1:SCL", "bb1:6t.a", "cyan", [ "v0" ] ],
+    [ "imu1:SDA", "bb1:7t.a", "yellow", [ "v0" ] ],
+    [ "bb1:6t.b", "esp:19", "cyan", [ "v0" ] ],
+    [ "bb1:7t.b", "esp:18", "yellow", [ "v0" ] ],
+    [ "esp:GND.2", "bb1:tn.1", "black", [ "v0.18", "h57.87", "v28.8" ] ],
+    [ "esp:3V3", "bb1:tp.1", "red", [ "h0.42", "v-38.22", "h163.2", "v57.3" ] ]
   ],
   "dependencies": {}
 }
