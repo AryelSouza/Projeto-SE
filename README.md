@@ -1,6 +1,6 @@
 # 🧭 Mesa Labirinto Controlada por Joystick  
 ### Projeto Final – Sistemas Embarcados – 2025.2
-### Equipe: Aryel Souza,Kevin Ryan,Thiago Barbosa,Plinio
+#### Equipe: Aryel Souza,Kevin Ryan,Thiago Barbosa,Plinio
 
 Este projeto implementa uma **mesa com labirinto controlada por joystick**, utilizando **ESP32**, **MPU6050**, **servomotores**, **InfluxDB** e **Grafana**.  
 O objetivo é criar um sistema físico capaz de inclinar a mesa para movimentar uma esfera metálica e, ao mesmo tempo, apresentar um **gêmeo digital** da mesa no computador.
