@@ -5,6 +5,8 @@
 Este projeto implementa uma **mesa com labirinto controlada por joystick**, utilizando **ESP32**, **MPU6050**, **servomotores**, **InfluxDB** e **Grafana**.  
 O objetivo é criar um sistema físico capaz de inclinar a mesa para movimentar uma esfera metálica e, ao mesmo tempo, apresentar um **gêmeo digital** da mesa no computador.
 
+Demonstração do projeto no youtube: https://youtu.be/rAslTkoXGCg
+
 ---
 
 ## 📌 Funcionalidades Principais
@@ -45,7 +47,7 @@ O objetivo é criar um sistema físico capaz de inclinar a mesa para movimentar 
 - Joystick analógico
 - 2x Servomotores 90G
 - MPU6050
-- LED de status
+- Sensor Indutivo
 - Estrutura mecânica da mesa
 
 ### **Software**
