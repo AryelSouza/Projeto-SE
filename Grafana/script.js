@@ -12,7 +12,7 @@
 
   // --- 2. CONFIGURAÇÃO DA CENA 3D (RODA APENAS UMA VEZ) ---
   // O Grafana recarrega este script sempre que os dados mudam. 
-  // A verificação abaixo garante que não recriemos a cena do zero a cada atualização,
+  // A verificação abaixo garante que a cena não seja recriada do zero a cada atualização,
   // mantendo a performance e evitando duplicação de canvas.
   if (!container.sceneState) {
     const width = container.clientWidth || 400;
@@ -118,7 +118,6 @@
       let r = 0; // Variável temporária para Roll
       let found = false;
 
-      // --- LÓGICA "SHERLOCK HOLMES" ---
       // O Grafana pode enviar dados em formatos diferentes dependendo da versão ou da query.
       // Abaixo tentamos encontrar "pitch" e "roll" de várias formas:
 
