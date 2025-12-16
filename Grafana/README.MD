@@ -43,8 +43,7 @@ Para que este painel funcione, é necessário instalar o seguinte plugin no seu 
 ## Dependências
 
 Este projeto depende das seguintes bibliotecas (carregadas via CDN ou locais):
-* [Three.js](https://threejs.org/) (Exemplo)
-* [JQuery](https://jquery.com/) (Se aplicável)
+* [Three.js](https://threejs.org/)
 
 ---
 *Última atualização: [15/12/2025]*
