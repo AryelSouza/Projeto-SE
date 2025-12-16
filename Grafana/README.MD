@@ -12,7 +12,7 @@ Esta visualização utiliza o plugin **Business Text** para execução de script
 | **`script.js`** | Lógica da aplicação. Responsável pela inicialização da cena, imports (Three.js, etc.) e manipulação dos dados. |
 | **`style.css`** | Estilização do container e elementos de UI do painel. |
 
-## ⚙️ Pré-requisitos
+## Pré-requisitos
 
 Para que este painel funcione, é necessário instalar o seguinte plugin no seu Grafana:
 
